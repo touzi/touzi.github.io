@@ -9,7 +9,7 @@ tags:  blog 搭建
 #第一篇blog,搭建blog空间
 #####本博客使用jekyll+github+markdown搭建而成.在此感谢Yonsm.本blog源码地址[github](https://github.com/touzi/tblog) 直接fork就可以运行.
 ***
-因为我没有域名所以修改了 _config.yml配置文件,在其中加入了repository: 属性,这样可以在没有域名的时候然访问直接到仓库下面.如:http://touzi.github.io/tblog/ 如果加入repository这个属性那么访问首页的时候是在http://touzi.github.io 那就访问不到你的项目了.当然有其他解决方法,比如404跳转单正确路径的首页等.
+因为我没有域名所以修改了 _config.yml配置文件,在其中加入了repository: 属性,这样可以在没有域名的时候然访问直接到仓库下面.如:[http://touzi.github.io/tblog/](http://touzi.github.io/tblog/) 如果加入repository这个属性那么访问首页的时候是在[http://touzi.github.io](http://touzi.github.io) 那就访问不到你的项目了.当然有其他解决方法,比如404跳转单正确路径的首页等.
 ***
 ###关于搭建
 其实搭建很简单,只要去fork项目就可以直接运行.原作者已经给了配置介绍,再次不再赘述.
