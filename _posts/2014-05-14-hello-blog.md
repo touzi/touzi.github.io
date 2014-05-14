@@ -1,5 +1,5 @@
 ---
-date: 2004-10-04 02:44:30+00:00
+date: 2014-05-14 02:44:30+00:00
 layout: post
 title: 第一篇blog,搭建blog空间
 thread: 0
