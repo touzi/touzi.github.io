@@ -22,14 +22,10 @@ tags:  blog 搭建
 我用的是马克飞象的chrome插件,这个马克飞象可以直接同步evernote.
 
 1. markdown语法非常简单,对于一般的写作我觉得万全足够用了.
-
 2. 截个图给大家看简单的语法  
  ![截个图给大家看看](http://tblogmarkdown.qiniudn.com/20140513165053.jpg)
-
 3. 上面图片效果不怎么样,我用dropbox的共享功能,发现图片一直不能被插入.然后我决定用七牛了[七牛官网](https://portal.qiniu.com/signup?code=3ll21nl4v4hua)
-
 4. 直接导出.md文件上传就可以发布blog
-
 5. end
 
 ***
