@@ -16,11 +16,11 @@ font-weight:700;
 }
 }
 
-/*html {
+html {
 font-size:100%;
 -webkit-text-size-adjust:100%;
 -ms-text-size-adjust:100%;
-}*/
+}
 
 a:focus {
 outline:5px auto 0;
