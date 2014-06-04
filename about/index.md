@@ -1,7 +1,8 @@
 ---
+layout: post
 title: 关于
-layout: page
-comments: no
+description: 关于头子
+keywords: Markdown
 ---
 
 {{ site.about }}
