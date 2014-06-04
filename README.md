@@ -1,11 +1,12 @@
-[Yonsm.NET](http://www.yonsm.net) 的博客
+[头子](http://touzi.github.io/) 的博客
 
-本博客运行于 [Jekyll](http://jekyllrb.com) @ [GitHub](http://github.com/Yonsm/NET)，博客模板修改自 [WebFrog](http://webfrogs.me/) 的博客。本博客模板已经全部通用化，使用极其简单。
+本博客运行于 [Jekyll](http://jekyllrb.com) @ [GitHub](http://touzi.github.io/)，博客模板修改自 [WebFrog](http://webfrogs.me/) 的博客。本博客模板已经全部通用化，使用极其简单。
 
 
 ## 安装
 
-1. [Fork](https://github.com/Yonsm/NET/fork) [http://github.com/Yonsm/NET](http://github.com/Yonsm/NET)。
+1. [Fork](https://github.com/touzi/touzi.github.io/fork) 
+2. [https://github.com/touzi/touzi.github.io/](https://github.com/touzi/touzi.github.io/)。
 
 2. 所有个人相关的配置都在 _config.yml 中，修改其中内容：
   * markdown: rdiscount ***（建议不修改）***
@@ -49,6 +50,8 @@
 * 点击 Powered by 里面的 **Po** 撰写新文章；点击 **ed** 编辑当前页面。
 * 虽然可以用在线的编辑器来编辑和发布文章，但为了批量修改方便，还是推荐 Check Out 后修改。
 
-Yonsm
+##头子修改
 
-2013-07-17
+touzi
+
+2014/6/4 22:28:38 
