@@ -1,7 +1,7 @@
 ---
 date: 2014/6/15 20:15  
 layout: post
-title: python requests的安装
+title: python上requests的安装
 thread: 1
 categories: python
 tags: python requests
