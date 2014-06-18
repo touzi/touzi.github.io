@@ -1,7 +1,7 @@
 ---
 date: 2014/6/18 21:39:50 
 layout: post
-title: Scrapy：使用Android API最佳实践
+title: 使用Android API最佳实践
 thread: 1
 categories: 移动开发
 tags: Android API
