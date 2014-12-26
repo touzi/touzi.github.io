@@ -24,6 +24,7 @@ tags: nginx
 [http://wiki.ubuntu.org.cn/Nginx](http://wiki.ubuntu.org.cn/Nginx)
 
 Ubuntu安装之后的文件结构大致为：
+
 * 所有的配置文件都在`/etc/nginx`下，并且每个虚拟主机已经安排在了`/etc/nginx/sites-available`下
 * 程序文件在`/usr/sbin/nginx`
 * 日志放在了`/var/log/nginx`中
@@ -133,6 +134,7 @@ Ubuntu安装之后的文件结构大致为：
     }
 
 **注意:**
+
 1. 因为我的两个项目都在本机所以`proxy_pass`用了`127.0.0.1`,如果你们的项目在其他服务器上可以直接写ip地址.
 2. `access_log` 一定要配置对,不然的话会因找不到这个日志路径而无法重启nginx
 3. 多个server就可以配置多个
