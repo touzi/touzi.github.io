@@ -22,21 +22,22 @@ tags: nginx
 
 因为是自动安装所以目录结构有所变化,根据Ubuntu官方给的文档介绍如下
 [http://wiki.ubuntu.org.cn/Nginx](http://wiki.ubuntu.org.cn/Nginx)
+
 Ubuntu安装之后的文件结构大致为：
-* 所有的配置文件都在/etc/nginx下，并且每个虚拟主机已经安排在了/etc/nginx/sites-available下
-* 程序文件在/usr/sbin/nginx
-* 日志放在了/var/log/nginx中
-* 并已经在/etc/init.d/下创建了启动脚本nginx
-* 默认的虚拟主机的目录设置在了/var/www/nginx-default (有的版本 默认的虚拟主机的目录设置在了/var/www, 请参考/etc/nginx/sites-available里的配置)
+* 所有的配置文件都在`/etc/nginx`下，并且每个虚拟主机已经安排在了`/etc/nginx/sites-available`下
+* 程序文件在`/usr/sbin/nginx`
+* 日志放在了`/var/log/nginx`中
+* 并已经在`/etc/init.d/`下创建了启动脚本nginx
+* 默认的虚拟主机的目录设置在了`/var/www/nginx-default` (有的版本 默认的虚拟主机的目录设置在了`/var/www`, 请参考`/etc/nginx/sites-available`里的配置)
 
 ## 2. 启动nginx
 
     sudo /etc/init.d/nginx start
 
-然后就可以访问了，http://localhost/ ， 一切正常！
-如果不能访问，先不要继续，看看是什么原因，解决之后再继续。 
-启动时候若显示端口80被占用： Starting nginx: [emerg]: bind() to 0.0.0.0:80 failed (98: Address already in use) 修改文件：/etc/nginx/sites-available/default,去掉 listen 前面的 # 号 , # 号在该文件里是注释的意思 , 并且把 listen 后面的 80 端口号改为自己的端口，访问是需要添加端口号。
-（安装完后如出现403错误，那可能是nginx配置文件里的网站路径不正确）
+* 然后就可以访问了，`http://localhost/` ， 一切正常！
+* 如果不能访问，先不要继续，看看是什么原因，解决之后再继续。 
+* 启动时候若显示端口80被占用： `Starting nginx: [emerg]: bind() to 0.0.0.0:80 failed (98: Address already in use)` 修改文件：`/etc/nginx/sites-available/default`,去掉 `listen` 前面的 `#` 号 , # 号在该文件里是注释的意思 , 并且把 listen 后面的 80 端口号改为自己的端口，访问是需要添加端口号。
+* （安装完后如出现403错误，那可能是nginx配置文件里的网站路径不正确）
 
 如果看到一下结果说明安装成功.
 ![http://tblogmarkdown.qiniudn.com/0.png](http://tblogmarkdown.qiniudn.com/0.png)
@@ -47,10 +48,12 @@ Ubuntu安装之后的文件结构大致为：
     sudo vim nginx.conf
 
 **在http{}中加入下面的代码,注意这里要加在这两天命令之前**
-    include /etc/nginx/conf.d/*.conf;
-    include /etc/nginx/sites-enabled/*;
 
-    ##
+`include /etc/nginx/conf.d/*.conf;`
+
+`include /etc/nginx/sites-enabled/*;`
+
+        ##
         #touzi --- 122614
         ##
         client_max_body_size 50m;
@@ -130,8 +133,8 @@ Ubuntu安装之后的文件结构大致为：
     }
 
 **注意:**
-1. 因为我的两个项目都在本机所以proxy_pass用了127.0.0.1,如果你们的项目在其他服务器上可以直接写ip地址.
-2. access_log 一定要配置对,不然的话会因找不到这个日志路径而无法重启nginx
+1. 因为我的两个项目都在本机所以`proxy_pass`用了`127.0.0.1`,如果你们的项目在其他服务器上可以直接写ip地址.
+2. `access_log` 一定要配置对,不然的话会因找不到这个日志路径而无法重启nginx
 3. 多个server就可以配置多个
 
 ## 5. 重启nginx
