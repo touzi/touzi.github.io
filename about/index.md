@@ -20,6 +20,8 @@ keywords: Markdown
 
 GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
 
+twitter: [https://twitter.com/{{site.twitter}}](https://twitter.com/{{site.twitter}})
+
 ----
 
 
