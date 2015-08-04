@@ -35,6 +35,10 @@ tags: 开发
 
 主要使用到了RetailCommonWebAPI 类中的makePostRequest方法,通过这个方法可以实现JPush的API调用,我们可以将自己定义的内容放在json中,用一个json类来规范代码.
 
+####客户端
+
+这边我用的是JPush提供自动生成的android的demo改的,主要修改了消息接受之后的内容展示,这里就不贴上代码了,很简单的一个json解析.
+
 这里因为是演示DEMO所以就凑合着用了.
 
 
