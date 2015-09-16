@@ -8,7 +8,7 @@ tags: 开发
 
 ---
 
-### Dynamics AX 跨窗体调用方法
+## Dynamics AX 跨窗体调用方法
 
 ### 问题: AX中子窗体关闭后刷新父窗体
 
