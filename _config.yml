@@ -1,3 +1,4 @@
+kramdown: input: GFM
 markdown: rdiscount
 permalink: /:title/
 url: https://touzi.github.com
