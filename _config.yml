@@ -1,5 +1,5 @@
-kramdown: input: GFM
-markdown: rdiscount
+kramdown: 
+  input: GFM
 permalink: /:title/
 url: https://touzi.github.com
 name: Joe
